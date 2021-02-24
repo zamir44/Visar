@@ -16,10 +16,15 @@ console.log(incrementOne.addOne())
 
 //////////////////////////////////////////
 
-// function Increment() {
-//     this.add = 0;
-// }
+var Incremento = function () {
+    this.add = 0;
+}
 
-// Increment.prototype.addOne() {
-//     return this.add++;
-// }
+Incremento.prototype.addOne = function() {
+    return this.add++;
+}
+
+const incrementOnes = new Incremento();
+incrementOnes.addOne();
+
+console.log(incrementOne.addOne())
